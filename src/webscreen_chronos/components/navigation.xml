@@ -1,0 +1,65 @@
+<component>
+    <previews>
+        <preview height="240" width="536" style_pad_all="10" style_bg_color="#000000" />
+    </previews>
+    <styles>
+        <style name="dark"
+            width="100%"
+            height="100%"
+            bg_color="#000000"
+            border_width="0"
+            radius="0" 
+            pad_all="0"
+            text_color="#ffffff"
+            text_font="nn_regular_40"/>
+
+        <style name="w300"
+            width="340"
+            height="100%"
+            pad_all="5"
+            />
+
+        <style name="flex_ver"
+            bg_color="#000000"
+            border_width="1"
+            radius="10" 
+            pad_all="0"
+            text_color="#ffffff"
+            text_font="nn_regular_40"
+            layout="flex"
+            flex_flow="column"
+            flex_track_place="center"
+            flex_main_place="space_around"
+            flex_cross_place="center"
+            
+            />
+        <style name="canvas"
+            width="48"
+            height="48"
+            bg_color="#ffffff" />
+
+    </styles>
+    <view extends="lv_obj" styles="dark">
+
+        <lv_obj styles="dark flex_ver w300" align="top_right">
+            <lv_label bind_text="nav_eta" width="100%" style_text_align="center"></lv_label>
+            <lv_label bind_text="nav_duration" width="100%" style_text_align="center"></lv_label>
+            <lv_label bind_text="nav_directions" width="100%" style_text_align="center" style_text_font="nn_regular_30"></lv_label>
+
+        </lv_obj>
+
+        <lv_obj styles="flex_ver" width="166" height="170" style_flex_main_place="end">
+            
+            <lv_canvas styles="canvas"></lv_canvas>
+            <lv_label bind_text="nav_title" style_text_font="nn_bold_50"></lv_label>
+            <lv_label bind_text="nav_speed" style_text_font="nn_regular_24"></lv_label>
+
+        </lv_obj>
+        <lv_obj styles="flex_ver" width="166" height="40" align="bottom_left" style_flex_main_place="center">
+            <lv_label bind_text="sys_time" style_text_font="nn_bold_24"></lv_label>
+        </lv_obj>
+        
+        
+
+    </view>
+</component>

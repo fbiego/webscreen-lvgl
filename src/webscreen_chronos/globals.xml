@@ -1,0 +1,63 @@
+<globals>
+    <api>
+        <!-- Add <enumdefs> here -->
+    </api>
+
+    <consts>
+        <!-- Add <px>, <int>, <color> etc here -->
+    </consts>
+
+    <styles>
+        <!-- Add <style> tags here -->
+    </styles>
+
+    <images>
+        <!-- Add <file> or <data> tags here -->
+    </images>
+
+    <fonts>
+        <!-- Add <bin> , <tiny_ttf>, <freetype> tags here -->
+
+        <tiny_ttf name="neon_100" src_path="fonts/Neoneon.otf" size="100" as_file="true" />
+
+        <tiny_ttf name="sony_50" src_path="fonts/Sony_Sketch_EF.ttf" size="50" as_file="true" />
+
+        <tiny_ttf name="nn_regular_24" src_path="fonts/NunitoSans_10pt_Regular.ttf" size="24" as_file="true" />
+        <tiny_ttf name="nn_bold_24" src_path="fonts/NunitoSans_10pt_Bold.ttf" size="24" as_file="true" />
+        <tiny_ttf name="nn_regular_30" src_path="fonts/NunitoSans_10pt_Regular.ttf" size="30" as_file="true" />
+        <tiny_ttf name="nn_regular_40" src_path="fonts/NunitoSans_10pt_Regular.ttf" size="40" as_file="true" />
+        <tiny_ttf name="nn_bold_30" src_path="fonts/NunitoSans_10pt_Bold.ttf" size="30" as_file="true" />
+        <tiny_ttf name="nn_bold_50" src_path="fonts/NunitoSans_10pt_Bold.ttf" size="50" as_file="true" />
+    </fonts>
+
+    <subjects>
+        <int name="hour" value="13" />
+        <int name="minute" value="5" />
+        <string name="sys_time" value="13:05" />
+        <string name="sys_date" value="Sun 15 Jun" />
+
+        <int name="temp" value="15" />
+        <string name="city" value="Nairobi" />
+
+        <int name="battery" value="75" />
+
+        <int name="connected" value="1" />
+        <int name="navigate" value="0" />
+
+        <int name="notification" value="0" />
+        <int name="alert" value="0" />
+
+
+        <string name="notif_title" value="Notification" />
+        <string name="notif_message" value="This is a notification" />
+        <string name="notif_time" value="13:45" />
+
+        <string name="nav_title" value="410m" />
+        <string name="nav_duration" value="2min 850m" />
+        <string name="nav_eta" value="18:03 ETA" />
+        <string name="nav_directions" value="Turn right towards Moi Avenue" />
+        <string name="nav_speed" value="4 km/h" />
+        
+    </subjects>
+    
+</globals>

@@ -1,0 +1,65 @@
+<component>
+    <previews>
+        <preview height="240" width="536" style_pad_all="10" style_bg_color="#000000"  />
+    </previews>
+    <styles>
+        <style name="dark"
+            width="100%"
+            height="100%"
+            bg_color="#000000"
+            border_width="0"
+            radius="0" 
+            pad_all="0"
+            text_color="#ffffff"
+            text_font="nn_regular_30"/>
+
+        <style name="w400"
+            width="375"
+            height="100%"
+            pad_all="10"
+            />
+
+        <style name="flex_ver"
+            bg_color="#000000"
+            border_width="1"
+            radius="10" 
+            layout="flex"
+            flex_flow="column"
+            flex_track_place="center"
+            flex_main_place="start"
+            flex_cross_place="center"
+            text_color="#ffffff"
+            text_font="nn_regular_30"
+            pad_all="0"
+            
+            />
+
+    </styles>
+    <api>
+        <prop name="title" type="subject" default="notif_title"></prop>
+        <prop name="message" type="subject" default="notif_message"></prop>
+        <prop name="time" type="subject" default="notif_time"></prop>
+    </api>
+    <view extends="lv_obj" styles="dark">
+
+
+
+        <lv_obj styles="flex_ver" style_flex_main_place="center">
+            <lv_label bind_text="$time" align="bottom_left" width="100%" style_text_align="center"></lv_label>
+
+
+        </lv_obj>
+
+        <lv_obj styles="flex_ver" height="40" align="bottom_left" style_flex_main_place="center">
+            <lv_label bind_text="sys_time" style_text_font="nn_bold_24"></lv_label>
+        </lv_obj>
+
+        
+        <lv_obj styles="dark flex_ver w400" align="top_right">
+            <lv_label bind_text="$title" style_text_font="nn_bold_30" width="100%"></lv_label>
+            <lv_label bind_text="$message" width="100%"></lv_label>
+        </lv_obj>
+        
+
+    </view>
+</component>

@@ -1,0 +1,84 @@
+<screen>
+    <consts>
+        
+    </consts>
+    <styles>
+
+        <style name="dark"
+            width="100%"
+            height="100%"
+            bg_color="#000000"
+            border_width="0"
+            radius="0" 
+            pad_all="10"
+            text_color="#ffffff" />
+
+        <style name="alert"
+            width="100"
+            height="100"
+            bg_opa="0" 
+            radius="50"
+            border_width="5"
+            shadow_color="#ffffff"
+            shadow_width="50"
+            shadow_spread="5"
+            shadow_opa="128"
+            />
+        <style name="alert_big"
+            width="100%"
+            height="100%"
+            bg_opa="0" 
+            radius="10"
+            border_width="1"
+            shadow_color="#ffffff"
+            shadow_width="50"
+            shadow_spread="5"
+            shadow_opa="128"
+            />
+        <style name="flex_ver"
+            bg_color="#000000"
+            border_width="1"
+            radius="10" 
+            pad_all="0"
+            text_color="#ffffff"
+            text_font="nn_regular_40"
+            layout="flex"
+            flex_flow="column"
+            flex_track_place="center"
+            flex_main_place="space_around"
+            flex_cross_place="center"
+            
+            />
+        <style name="w300"
+            width="340"
+            height="100%"
+            
+            />
+        
+    </styles>
+    <view extends="lv_obj" styles="dark">
+
+
+        <lv_obj styles="dark flex_ver w300" align="top_right">
+            <lv_label bind_text="sys_time" style_text_font="neon_100"></lv_label>
+            <lv_label bind_text="sys_date" style_text_font="sony_50" ></lv_label>
+
+        </lv_obj>
+        <lv_obj styles="flex_ver" width="166" height="120">
+            
+            <lv_label bind_text="temp '%d°C'" style_text_font="nn_regular_40"></lv_label>
+            <lv_label bind_text="city" style_text_font="nn_regular_24"></lv_label>
+
+        </lv_obj>
+        <lv_obj styles="flex_ver" width="166" height="90" align="bottom_left" style_flex_main_place="center" bind_flag_if_eq="connected hidden 0">
+            <lv_label text="Phone" style_text_font="nn_regular_24"></lv_label>
+            <lv_label bind_text="battery '%d%%'" style_text_font="nn_bold_24"></lv_label>
+        </lv_obj>
+        <notification title="notif_title" message="notif_message" time="notif_time" bind_flag_if_eq="notification hidden 0"></notification>
+        <navigation bind_flag_if_eq="navigate hidden 0"></navigation>
+
+        <!-- <lv_obj styles="alert" x="218" y="70"></lv_obj> -->
+        <lv_obj styles="alert_big" bind_flag_if_eq="alert hidden 0"></lv_obj>
+
+    </view>
+</screen>
