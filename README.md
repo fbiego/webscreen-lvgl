@@ -1,6 +1,6 @@
 # WebScreen LVGL + Chronos
 This is an LVGL UI project for the WebScreen ESP32-S3 AMOLED Display.
-It displays time, weather, phone battery level, notifications, and a navigation screen — all synced via ChronosESP32 and the Chronos App.
+It displays time, weather, phone battery level, notifications, and a navigation screen — all synced via [ChronosESP32](https://github.com/fbiego/chronos-esp32) and the Chronos App.
 
 ![webscreen](images/webscreen.png?raw=true "webscreen")
 
